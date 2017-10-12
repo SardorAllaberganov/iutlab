@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>IUTLab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="shortcut icon" href="data/img/Marck-Design-Logo.png" type="image/png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="data/css/style.css">
+	<link rel="stylesheet" type="text/css" href="data/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="data/css/media-queries.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="data/js/jquery.fullPage.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+	
+	<!-- fullpage script -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
+		});
+	</script>
+	
+	<style type="text/css">
+	.menu-btn{color:black;}
+	.navbar-nav>li>a{color: white!important;}
+	.navbar-brand{color:white!important;}
+	.navbar{background: none!important;}
+	.navbar-nav>li>a:hover{color: white!important;}
+	#section0 h1{
+	    padding: 250px 0 10px 0;
+	    text-align: center!important;
+		font-family: Brush Script MT; 
+	}
+	.section0-head,.section1-img,.section2-img,.section3-img,.section4-img{
+		margin-top: 70px!important;
+		width: 20%;
+	}
+	.section0-anim,.section1-anim,.section2-anim,.section3-anim{
+		margin: 20px 0 0 0!important;
+		color: white;
+		width: 70%!important;
+	}
+	.button {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 100;
+ 	padding: 10px !important;
+ 	text-decoration: none!important;
+ 	border: 1px solid #fff;
+ 	background: #000;
+ 	font-family: open sans;
+ 	color: #fff;
+ 	font-size: 16px;
+ 	border-radius: 22px;
+ 	transition: 0.5s;
+ 	cursor: pointer;
+	}
+	.button:hover {
+	  color: #000!important;
+	  background: #fff;
+	 }
+
+	.button:focus {
+	  outline-width: 0;
+	  color: white;
+	 }
+	 div#text { width: 0px; height: 2em; white-space: nowrap; overflow: hidden;  }
+</style>
+</head>
+<body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="latest work.html">Последние проекты</a>
+    <a href="services.html">Услуги</a>
+    <a href="contact us.html">Свяжитесь с нами</a>
+    <a href="blog.html">Блог</a>
+  </div>
+</div>
+
+<!-- navbar -->
+<nav class="navbar navbar-fixed-top main-nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <button class="menu-btn" onclick="openNav()">&#9776; MENU</button>
+	  <a class="navbar-brand" href="index.html">IUT<span>Lab</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right" style="color:white;">
+	      <li class="active"><a href="latest work.html">Последние проекты</a></li>
+		  <li><a href="services.html">Услуги</a></li>
+          <li><a href="contact us.html">Свяжитесь с нами</a></li>
+          <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<a class="forkit" data-text="Отправить Запрос" data-text-detached="Тянуть вниз >"></a>
+
+<div id="fullpage">
+	<!-- section 0 -->
+	<div class="section" id="section0">
+		<center>
+		  <div class="row">
+		  	<img class="section0-head" src="data/img/logo.png" />
+		  </div>
+		  <div class="row">
+		  	<!-- <div id="text"><span>Highly motivated students who are making the world better place by creating amazing applications and beautiful websites.</span></div> -->
+		  	<div class="box">
+			    <div id="message"></div>
+			</div>
+
+		  </div>
+		</center>
+	</div>
+	<!-- section 1 -->
+	
+	<div class="section" id="section1">
+	  <center>
+		  <div class="row">
+			<img class="section1-img" src="data/img/main/section1.svg">
+		  </div>
+		  <div class="row">
+			<h3 class="section1-anim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, ante sit amet faucibus accumsan, orci ligula fermentum urna, a efficitur ex libero eu nisl. Integer vulputate egestas nisi, at fermentum ligula accumsan in. Integer et ipsum at neque rhoncus ultricies. Phasellus velit leo, bibendum non magna eget, vestibulum consequat turpis. Phasellus eu volutpat magna, ultricies varius nibh. Proin efficitur porttitor massa eu dapibus. Donec sit amet tortor vitae dolor facilisis viverra. Quisque at fringilla lectus. Nunc vel sodales arcu, venenatis varius ipsum. Vivamus scelerisque nibh et suscipit commodo. Morbi quis augue id purus convallis luctus.</h3>
+		  </div>
+		</center>
+	</div>	
+	
+	<!-- section 2 -->
+	<div class="section" id="section2">
+		 <center>
+		  <div class="row">
+			<img class="section2-img" src="data/img/main/section2.svg">
+		  </div>
+		  <div class="row">
+			<h3 class="section2-anim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, ante sit amet faucibus accumsan, orci ligula fermentum urna, a efficitur ex libero eu nisl. Integer vulputate egestas nisi, at fermentum ligula accumsan in. Integer et ipsum at neque rhoncus ultricies. Phasellus velit leo, bibendum non magna eget, vestibulum consequat turpis. Phasellus eu volutpat magna, ultricies varius nibh. Proin efficitur porttitor massa eu dapibus. Donec sit amet tortor vitae dolor facilisis viverra. Quisque at fringilla lectus. Nunc vel sodales arcu, venenatis varius ipsum. Vivamus scelerisque nibh et suscipit commodo. Morbi quis augue id purus convallis luctus.</h3>
+		  </div>
+		</center>
+	</div>
+	
+	<!--section 3 -->
+	<div class="section" id="section3">
+		 <center>
+		  <div class="row">
+			<img class="section3-img" src="data/img/main/section3.svg">
+		  </div>
+		  <div class="row">
+			<h3 class="section3-anim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, ante sit amet faucibus accumsan, orci ligula fermentum urna, a efficitur ex libero eu nisl. Integer vulputate egestas nisi, at fermentum ligula accumsan in. Integer et ipsum at neque rhoncus ultricies. Phasellus velit leo, bibendum non magna eget, vestibulum consequat turpis. Phasellus eu volutpat magna, ultricies varius nibh. Proin efficitur porttitor massa eu dapibus. Donec sit amet tortor vitae dolor facilisis viverra. Quisque at fringilla lectus. Nunc vel sodales arcu, venenatis varius ipsum. Vivamus scelerisque nibh et suscipit commodo. Morbi quis augue id purus convallis luctus.</h3>
+		  </div>
+		</center>
+	</div>
+	<!-- section 4 -->
+	<div class="section" id="section4">
+		<center>
+		  <div class="row">
+			<img class="section4-img" src="data/img/main/section4.svg">
+		  </div>
+		  <div class="row">
+			<h3 class="section3-anim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, ante sit amet faucibus accumsan, orci ligula fermentum urna, a efficitur ex libero eu nisl. Integer vulputate egestas nisi, at fermentum ligula accumsan in. Integer et ipsum at neque rhoncus ultricies. Phasellus velit leo, bibendum non magna eget, vestibulum consequat turpis. Phasellus eu volutpat magna, ultricies varius nibh. Proin efficitur porttitor massa eu dapibus. Donec sit amet tortor vitae dolor facilisis viverra. Quisque at fringilla lectus. Nunc vel sodales arcu, venenatis varius ipsum. Vivamus scelerisque nibh et suscipit commodo. Morbi quis augue id purus convallis luctus.</h3>
+		  </div>
+		</center>
+	</div>
+</div>
+
+<!-- preloader -->
+<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+
+
+<!-- request form -->
+<div id="request_form">
+            <div class="close-button"><span class="fa" style="font-family: 'fontawesome'!important;">&#xf057;</span></div>
+            <div style="margin-top: 60px;">
+                <div class="title">Расскажите нам о<span> Своем</span> Проекте</div>
+                <div lang="en-US" dir="ltr">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div id="contact-form" style="position: relative;">
+                        <center><form method="POST" name="myForm">
+                          <div class="row" style="padding-bottom: 65px;">
+                            <div class="col-md-6 col-sm-6 column" style="margin-right: 0!important;">
+                              <input id="full_name" maxlength="40" name="full_name" size="20" type="text" placeholder="Ваше имя" class="form-control" required />
+                              <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Адрес электронной почты" class="form-control" required />
+                              <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Номер телефона" class="form-control" required />
+                              <input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Название компании" class="form-control" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 column">
+                              <textarea id="description" name="description" cols="30" rows="6" placeholder="Краткое описание проекта" class="form-control" required/ ></textarea>
+                              <input id="budget" name="budget" type="text" size="30" placeholder="Бюджет проекта" class="form-control" required />
+                            </div>
+                          </div>
+                          <div class="row" style="margin-left: 0!important; margin-right: 0!important;">
+                          <select class="selectpicker form-control" multiple data-max-options="8" style="color: #f1c40f; font-weight: bold;">
+                              <option selected disabled hidden style="color: #f1c40f;font-weight: bold;">Мне нужна помощь:</option>
+                              <option value="1">Редизайн моего сайта</option>
+                              <option value="2">Новый веб-сайт</option>
+                              <option value="3">Электронная торговля</option>
+                              <option value="4">Мобильное приложение</option>
+                              <option value="5">Брендинг</option>
+                              <option value="6">Маркетинг</option>
+                              <option value="7">Поддержка</option>
+                              <option value="8">Другие</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                            <center><button id="contactSubmit" type="submit" name="submit">Отправить</button></center>
+                            </div>
+                            <div style="text-align: center; color: #f1c40f;" class="form-error"></div>
+                          </form>
+                        </center>
+                      </div>
+                    </div>                
+                </div>
+            </div>
+        </div> 
+
+
+<!-- preloader script-->
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){	el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if(el.style.opacity <=0.05){clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){
+	setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
+</script>
+
+<!--dropdown menu -->
+<script type="text/javascript">
+	$('ul.nav li.dropdown').hover(function() {
+  		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+		}, function() {
+  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+</script>
+
+
+<!-- fullpage script animation-->
+<script type="text/javascript">
+	$('#fullpage').fullpage({
+	onLeave: function(index, nextIndex, direction){
+		var leavingSection = $(this);
+
+		if(index == 1 && direction == 'down'){
+	    		setTimeout(function(){
+	    			$(".section0-anim").removeClass("fadeInRight");
+	    			$(".section0-head").removeClass("fadeInLeft");
+	    		}, 100);
+		}
+		else if(index == 2 && direction == 'up'){
+	    		setTimeout(function(){
+	    			$(".section0-anim").addClass("fadeInRight");
+	    			$(".section0-head").addClass("fadeInLeft");
+	    		}, 100);
+		}
+
+		if(index == 1 && direction =='down'){
+			$(".section1-img").addClass("bounceIn");
+			$(".section1-anim").addClass("bounceIn");
+		}
+		//after leaving section 2
+		else if(index == 2 && direction =='down'){
+			$(".section2-img").addClass("bounceInDown");
+			$(".section2-anim").addClass("bounceInUp");
+		}
+		else if(index == 3 && direction == 'down'){
+			$(".section3-img").addClass("fadeInRight");
+			$(".section3-anim").addClass("fadeInLeft");
+		}
+		else if(index == 4 && direction == 'down'){
+   			$(".section3-anim").addClass("fadeInRight");
+  			$(".section4-img").addClass("fadeInLeft");
+		}
+
+		else if(index == 2 || index == 3 || index == 4 || index == 5 && direction == 'up'){
+			$(".section1-anim").removeClass("bounceIn");
+			$(".section1-img").removeClass("bounceIn");
+			$(".section2-anim").removeClass("bounceInUp");
+			$(".section2-img").removeClass("bounceInDown");
+			$(".section3-img").removeClass("fadeInRight");
+			$(".section3-anim").removeClass("fadeInLeft");
+   			$(".section3-anim").removeClass("fadeInRight");
+  			$(".section4-img").removeClass("fadeInLeft");
+		}
+	}
+});
+</script>
+
+<!-- text animation -->
+<script type="text/javascript">
+    $(function(){
+    	setTimeout(function(){
+	    	$(".section0-anim").addClass("fadeInRight");
+	    	$(".section0-head").addClass("fadeInLeft");
+    	}, 1000);
+    });
+</script>
+
+<script>
+	function openNav() {
+	    document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav() {
+	    document.getElementById("myNav").style.width = "0%";
+	}
+</script>
+
+<script type="text/javascript">
+  $(function(){
+  	setTimeout(function(){
+  		var timer, fullText, currentOffset, onComplete;
+
+function Speak(text, callback) {
+    fullText = text;
+    currentOffset = 0;
+    onComplete = callback;
+    timer = setInterval(onTick, 60);
+}
+
+function onTick() {
+    currentOffset++;
+    if (currentOffset == fullText.length) {
+        complete();
+        return;
+    }
+    var text = fullText.substring(0, currentOffset);
+    $("#message").html(text);
+}
+
+function complete() {
+    clearInterval(timer);
+    timer = null;
+    $("#message").html(fullText);
+    onComplete();
+}
+
+$(".box").click(function () {
+    complete();
+});
+
+Speak("Мотивированные студенты, которые делают мир лучше, создавая удивительные приложения и красивые сайты."
+    );
+	},1000);
+  });
+</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type='text/javascript' src='data/js/forkit.min.js'></script> 
+
+</body>
+</html>

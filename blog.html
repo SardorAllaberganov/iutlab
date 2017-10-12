@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Блог</title>
+  <meta name="author" content="Alvaro Trigo Lopez" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="fullPage full-screen backgrounds." />
+  <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+  <meta name="Resource-type" content="Document" />
+
+  <!-- links -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,400"> 
+  <link rel="stylesheet" type="text/css" href="data/css/style.css">
+  <link rel="stylesheet" type="text/css" href="data/css/contact.css">
+  <link rel="stylesheet" type="text/css" href="data/css/media-queries.css">
+  <link rel="stylesheet" type="text/css" href="data/css/animate.css">
+  <link rel="shortcut icon" href="data/img/Marck-Design-Logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
+  <!-- <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'> -->
+  <link rel="stylesheet" href="data/css/blog-style.css">
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+  
+</head>
+
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="latest work.html">Последние проекты</a>
+    <a href="services.html">Услуги</a>
+    <a href="contact us.html">Свяжитесь с нами</a>
+    <a href="blog.html">Блог</a>
+  </div>
+</div>
+<!-- navbar -->
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button class="menu-btn" onclick="openNav()">&#9776; MENU</button>
+    <a class="navbar-brand" href="index.html">IUT<span>Lab</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right" style="color:white;">
+        <li class="active"><a href="latest work.html">Последние проекты</a></li>
+      <li><a href="services.html">Услуги</a></li>
+          <li><a href="contact us.html">Свяжитесь с нами</a></li>
+          <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<a class="forkit" data-text="Отправить Запрос" data-text-detached="Тянуть вниз >"></a>
+<style type="text/css">#nav{margin-right:100px}</style>
+
+<div class="demo-cont">
+  <!-- slider start -->
+  <div class="fnc-slider example-slider">
+    <div class="fnc-slider__slides">
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-green m--active-slide">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                Lorem <span>Ipsum-1</span>
+              </div>
+            </h2>
+            <p class="fnc-slide__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum elit vitae maximus tempor. Maecenas in finibus justo, vel eleifend sem. Nullam fermentum sed mauris id scelerisque. Donec ut nisi tellus. Phasellus in sem ornare, varius quam eu, finibus justo. Maecenas non arcu sed nibh mattis ullamcorper. Integer vitae lorem.</p>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-dark">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                Lorem <span>Ipsum-2</span>
+              </div>
+            </h2>
+            <p class="fnc-slide__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo vel arcu eleifend ultricies. Quisque vitae tellus nibh. Suspendisse sodales elit sapien, quis mollis nisl porta eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam dictum laoreet eros, eu blandit purus ultrices vitae. Duis.</p>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-red">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                Lorem <span>Ipsum-3</span>
+              </div>
+            </h2>
+            <p class="fnc-slide__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor libero turpis. In at lectus gravida, facilisis dui in, pharetra velit. Vestibulum eu augue sodales, tempus elit eu, molestie nibh. Phasellus efficitur interdum fringilla. Quisque sed orci efficitur, egestas nisl sit amet, faucibus massa. Nullam molestie interdum ligula, sed pulvinar.</p>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-blue">
+        <div class="fnc-slide__inner">
+          <div class="fnc-slide__mask">
+            <div class="fnc-slide__mask-inner"></div>
+          </div>
+          <div class="fnc-slide__content">
+            <h2 class="fnc-slide__heading">
+              <div class="fnc-slide__heading-line">
+                Lorem <span>Ipsum-4</span>
+              </div>
+            </h2>
+            <p class="fnc-slide__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla malesuada hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non magna sit amet turpis venenatis porttitor. Donec ut nisl quis risus efficitur maximus ut vitae lorem. Mauris iaculis fermentum placerat. Quisque vestibulum risus nec ipsum posuere, in venenatis.</p>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+    </div>
+    
+    <div class="footer_credits">
+      <button type="button" class="fnc-slide__action-btn">Credits
+        <span data-text="Credits">Credits</span>
+      </button>
+    </div>
+    
+    <nav class="fnc-nav">
+      <div class="fnc-nav__bgs">
+        <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+        <div class="fnc-nav__bg m--navbg-dark"></div>
+        <div class="fnc-nav__bg m--navbg-red"></div>
+        <div class="fnc-nav__bg m--navbg-blue"></div>
+      </div>
+      <div class="fnc-nav__controls">
+        <button class="fnc-nav__control">
+          Lorem Ipsum-1
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+        <button class="fnc-nav__control">
+          Lorem Ipsum-2
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+        <button class="fnc-nav__control">
+          Lorem Ipsum-3
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+        <button class="fnc-nav__control">
+          Lorem Ipsum-4
+          <span class="fnc-nav__control-progress"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <!-- slider end -->
+  <div class="demo-cont__credits">
+    <div class="demo-cont__credits-close"></div>
+    <h2 class="demo-cont__credits-heading">СДЕЛАНО</h2>
+    <h3 class="demo-cont__credits-name">программистами IUTLab</h3>
+    <a href="http://iutlab.uz" target="_blank" class="demo-cont__credits-link">IUTLab.uz</a>  
+  </div>
+</div>
+
+<!-- request form -->
+<div id="request_form">
+            <div class="close-button"><span class="fa" style="font-family: 'fontawesome'!important;">&#xf057;</span></div>
+            <div style="margin-top: 60px;">
+                <div class="title">Расскажите нам о<span> Своем</span> Проекте</div>
+                <div lang="en-US" dir="ltr">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div id="contact-form" style="position: relative;">
+                        <center><form method="POST" name="myForm">
+                          <div class="row" style="padding-bottom: 65px;">
+                            <div class="col-md-6 col-sm-6 column" style="margin-right: 0!important;">
+                              <input id="full_name" maxlength="40" name="full_name" size="20" type="text" placeholder="Ваше имя" class="form-control" required />
+                              <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Адрес электронной почты" class="form-control" required />
+                              <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Номер телефона" class="form-control" required />
+                              <input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Название компании" class="form-control" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 column">
+                              <textarea id="description" name="description" cols="30" rows="6" placeholder="Краткое описание проекта" class="form-control" required/ ></textarea>
+                              <input id="budget" name="budget" type="text" size="30" placeholder="Бюджет проекта" class="form-control" required />
+                            </div>
+                          </div>
+                          <div class="row" style="margin-left: 0!important; margin-right: 0!important;">
+                          <select class="selectpicker form-control" multiple data-max-options="8" style="color: #f1c40f; font-weight: bold;">
+                              <option selected disabled hidden style="color: #f1c40f;font-weight: bold;">Мне нужна помощь:</option>
+                              <option value="1">Редизайн моего сайта</option>
+                              <option value="2">Новый веб-сайт</option>
+                              <option value="3">Электронная торговля</option>
+                              <option value="4">Мобильное приложение</option>
+                              <option value="5">Брендинг</option>
+                              <option value="6">Маркетинг</option>
+                              <option value="7">Поддержка</option>
+                              <option value="8">Другие</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                            <center><button id="contactSubmit" type="submit" name="submit">Отправить</button></center>
+                            </div>
+                            <div style="text-align: center; color: #f1c40f;" class="form-error"></div>
+                          </form>
+                        </center>
+                      </div>
+                    </div>                
+                </div>
+            </div>
+        </div> 
+
+
+<!-- preloader -->
+<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+
+<!-- preloader script-->
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){ el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if(el.style.opacity <=0.05){clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){
+  setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type='text/javascript' src='data/js/forkit.min.js'></script> 
+<script src="data/js/blog.js"></script>
+
+</body>
+</html>

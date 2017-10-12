@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Свяжитесь с нами</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<!-- links -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,400"> 
+  <link rel="stylesheet" type="text/css" href="data/css/style.css">
+  <link rel="stylesheet" type="text/css" href="data/css/contact.css">
+  <link rel="stylesheet" type="text/css" href="data/css/media-queries.css">
+  <link rel="stylesheet" type="text/css" href="data/css/animate.css">
+	<link rel="shortcut icon" href="data/img/Marck-Design-Logo.png" type="image/png">
+
+	<!-- scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="latest work.html">Последние проекты</a>
+    <a href="services.html">Услуги</a>
+    <a href="contact us.html">Свяжитесь с нами</a>
+    <a href="blog.html">Блог</a>
+  </div>
+</div>
+
+<!-- navbar -->
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button class="menu-btn" onclick="openNav()">&#9776; MENU</button>
+    <a class="navbar-brand" href="index.html">IUT<span>Lab</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right" style="color:white;">
+        <li class="active"><a href="latest work.html">Последние проекты</a></li>
+      <li><a href="services.html">Услуги</a></li>
+          <li><a href="contact us.html">Свяжитесь с нами</a></li>
+          <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<a class="forkit" data-text="Отправить Запрос" data-text-detached="Тянуть вниз >"></a>
+<style type="text/css">#nav{margin-right:100px}</style>
+
+<div class="container-fluid">
+	<div class="row top-animate">
+		<div class="top-info col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h1>Свяжитесь с нами</h1>
+		</div>
+		<div class="box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<center>
+			<div class="col-md-3">
+				<h2>Начните проект</h2>
+				<p>Ташкент: (998) 289-9999</a></p>
+			</div>
+			<div class="col-md-3">
+				<h2>Запросы средств массовой информации</h2>
+				<p>Все коммуникации и прессы.</p>
+			</div>
+			<div class="col-md-3">
+				<h2>Карьера</h2>
+				<p>Если у вас есть потенциал</p>
+				<p>отправьте нам свое резюме.</p>
+			</div>
+			<div class="col-md-3">
+				<h2>Все остальное</h2>
+				<p>Не знаете, с чего начать?</p>
+				<p>Мы укажем вам в правильном направлении.</p>
+			</div>
+			</center>
+		</div>
+	</div>
+	<div class="row slideanim" style="margin-top: 100px;">
+		<h2 class="contact-form-heading">Отправить Запрос</h2>
+		<div class="col-md-6 col-md-offset-3">
+			<div id="contact-form" style="position: relative;">
+				<center><form method="POST" name="myForm">
+					<div class="row" style="padding-bottom: 65px;">
+						<div class="col-md-6 col-sm-6 column" style="margin-right: 0!important;">
+							<input id="full_name" maxlength="40" name="full_name" size="20" type="text" placeholder="Ваше имя" class="form-control" required />
+							<input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Адрес электронной почты" class="form-control" required />
+							<input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Номер телефона" class="form-control" required />
+							<input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Название компании" class="form-control" />
+						</div>
+						<div class="col-md-6 col-sm-6 column">
+							<textarea id="description" name="description" cols="30" rows="6" placeholder="Краткое описание проекта" class="form-control" required/ ></textarea>
+							<input id="budget" name="budget" type="text" size="30" placeholder="Бюджет проекта" class="form-control" required />
+						</div>
+					</div>
+					<div class="row">
+					<select class="selectpicker form-control" multiple data-max-options="8" style="color: #f1c40f; font-weight: bold;">
+					    <option selected disabled hidden style="color: #f1c40f;font-weight: bold;">Мне нужна помощь:</option>
+					    <option value="1">Редизайн моего сайта</option>
+					    <option value="2">Новый веб-сайт</option>
+					    <option value="3">Электронная торговля</option>
+					    <option value="4">Мобильное приложение</option>
+					    <option value="5">Брендинг</option>
+					    <option value="6">Маркетинг</option>
+					    <option value="7">Поддержка</option>
+					    <option value="8">Другие</option>
+					  </select>
+					  </div>
+					  <div class="col-sm-12 text-center">
+						<center><button id="contactSubmit" type="submit" name="submit">Отправить</button></center>
+					  </div>
+					  <div style="text-align: center; color: #f1c40f;" class="form-error"></div>
+					</form>
+				</center>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="heading">
+			<h2>Наш офис</h2>
+			<h3>Ташекент</h3>
+		</div>
+	<center>
+	  <img class="map" src="data/img/map.jpg">
+	</center>
+	<div>
+		<address>
+		9, улица Зиёлилар<br>район М.Улугбек<br>город Ташкент, Узбекистан<br>(998) 289-9999
+		</address>
+	</div>
+	</div>
+</div>
+
+<div class="row">
+  <footer id="footer">
+	  <ul class="footer social">
+		<li><a target="_blank" href="https://www.facebook.com/iutlab/" class="fa fb"><span style="font-family: 'fontawesome'!important;">&#xf09a;</span></a></li>
+		<li><a target="_blank" href="https://twitter.com/iutlab" class="fa tw" style="font-family: 'fontawesome'!important;">&#xf099;</a></li>
+		<li><a target="_blank" href="https://www.linkedin.com/company/iutlab" class="fa linkedin" style="font-family: 'fontawesome'!important;">&#xf0e1;</a></li>
+		<li><a target="_blank" href="https://plus.google.com/+iutlab/posts?hl=en" class="fa gp" style="font-family: 'fontawesome'!important;">&#xf0d5;</a></li>
+		<li><a target="_blank" href="https://www.instagram.com/iutlab" class="fa in" style="font-family: 'fontawesome'!important;">&#xf16d;</a></li>
+	  </ul>
+	<div class="bd-footer">
+	  <ul>
+    	<li>© 2017 Все права защищены.<a href="../privacy-policy/index.html">IUTLAB</a></li>
+	  </ul>
+	</div>
+  </footer>
+</div> 
+
+<!-- request form -->
+<div id="request_form">
+            <div class="close-button"><span class="fa" style="font-family: 'fontawesome'!important;">&#xf057;</span></div>
+            <div style="margin-top: 60px;">
+                <div class="title">Расскажите нам о<span> Своем</span> Проекте</div>
+                <div lang="en-US" dir="ltr">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div id="contact-form" style="position: relative;">
+                        <center><form method="POST" name="myForm">
+                          <div class="row" style="padding-bottom: 65px;">
+                            <div class="col-md-6 col-sm-6 column" style="margin-right: 0!important;">
+                              <input id="full_name" maxlength="40" name="full_name" size="20" type="text" placeholder="Ваше имя" class="form-control" required />
+                              <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Адрес электронной почты" class="form-control" required />
+                              <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Номер телефона" class="form-control" required />
+                              <input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Название компании" class="form-control" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 column">
+                              <textarea id="description" name="description" cols="30" rows="6" placeholder="Краткое описание проекта" class="form-control" required/ ></textarea>
+                              <input id="budget" name="budget" type="text" size="30" placeholder="Бюджет проекта" class="form-control" required />
+                            </div>
+                          </div>
+                          <div class="row" style="margin-left: 0!important; margin-right: 0!important;">
+                          <select class="selectpicker form-control" multiple data-max-options="8" style="color: #f1c40f; font-weight: bold;">
+                              <option selected disabled hidden style="color: #f1c40f;font-weight: bold;">Мне нужна помощь:</option>
+                              <option value="1">Редизайн моего сайта</option>
+                              <option value="2">Новый веб-сайт</option>
+                              <option value="3">Электронная торговля</option>
+                              <option value="4">Мобильное приложение</option>
+                              <option value="5">Брендинг</option>
+                              <option value="6">Маркетинг</option>
+                              <option value="7">Поддержка</option>
+                              <option value="8">Другие</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                            <center><button id="contactSubmit" type="submit" name="submit">Отправить</button></center>
+                            </div>
+                            <div style="text-align: center; color: #f1c40f;" class="form-error"></div>
+                          </form>
+                        </center>
+                      </div>
+                    </div>                
+                </div>
+            </div>
+        </div> 
+
+
+
+<!-- preloader -->
+<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+
+<!-- preloader script-->
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){	el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if(el.style.opacity <=0.05){clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){
+	setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
+</script>
+
+<!-- parallax js -->
+<script type="text/javascript">
+	$(window).scroll(function () {
+	    $(".contact-section").css("background-position","50% " + ($(this).scrollTop() / 2) + "px");
+	});
+</script>
+
+<!-- map -->
+<!-- <script>
+    function initMaps() {
+        var address = new ymaps.Map("map", {
+            center: [41.338579, 69.334552],
+            zoom: 15,
+            controls: []
+        });
+        address.geoObjects.add(new ymaps.Placemark([41.338579, 69.334552], {
+            balloonContent: 'Наш Офис'
+        }, {
+            preset: 'islands#redHomeIcon',
+            iconColor: '#F44336'
+        }));
+    }
+    ymaps.ready(initMaps);
+</script>
+ -->
+<!-- animation -->
+<script type="text/javascript">
+  $(window).scroll(function() {
+    setTimeout(function(){
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("bounceInLeft");
+          }
+      });
+    }, 100);   
+  });
+</script>
+
+<script type="text/javascript">
+    $(window).ready(function() {
+      setTimeout(function(){
+          $(".top-animate").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+              if (pos < winTop + 1000) {
+                $(this).addClass("zoomInDown");
+              }
+          });
+    }, 1000);
+    });
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<script type='text/javascript' src='data/js/forkit.min.js'></script> 
+
+</body>
+</html>

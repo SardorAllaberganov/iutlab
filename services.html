@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Сервисы</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
+	<meta name="keywords"  content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
+	<meta name="Resource-type" content="Document" />
+
+	<!-- links -->
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,400"> 
+    <link rel="stylesheet" type="text/css" href="data/css/style.css">
+    <link rel="stylesheet" type="text/css" href="data/css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="data/css/animate.css">
+    <link rel="shortcut icon" href="data/img/Marck-Design-Logo.png" type="image/png">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+	<!-- <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script> -->
+
+
+	<style type="text/css">
+/*		#particles-js {
+		  position: fixed;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #000;
+		  background-image: url("");
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-position: 50% 50%;
+		  z-index: 2;
+		}*/
+		body{
+			-webkit-animation: Gradient 15s ease infinite;
+			-moz-animation: Gradient 15s ease infinite;
+			animation: Gradient 15s ease infinite;
+			width: 100wh;
+			height: 90vh;
+			color: #fff;
+			background: linear-gradient(-45deg, #BBDEFB, #64B5F6, #2196F3, #1976D2, #283593);
+			background-size: 400% 400%;
+		}
+		.service-block{
+			box-shadow: 2px 2px 10px black;
+			border-radius: 20px;
+			background-color: rgba(255,255,255,0.8);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+    		transform: translate(-50%, -50%);
+    		z-index: 3;
+    	}
+    	h3{font-weight: bold;color: #424242}p{font-size: 16px;font-weight: bolder;color: #616161}
+    	.icons{font-size: 70px;padding: 20px;text-decoration: none!important; color: #616161;}
+    	.icons:hover{color: #f1c40f;}
+	</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="latest work.html">Последние проекты</a>
+    <a href="services.html">Услуги</a>
+    <a href="contact us.html">Свяжитесь с нами</a>
+    <a href="blog.html">Блог</a>
+  </div>
+</div>
+
+<!-- navbar -->
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <button class="menu-btn" onclick="openNav()">&#9776; MENU</button>
+	  <a class="navbar-brand" href="index.html">IUT<span>Lab</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right" style="color:white;">
+	      <li class="active"><a href="latest work.html">Последние проекты</a></li>
+		  <li><a href="services.html">Услуги</a></li>
+          <li><a href="contact us.html">Свяжитесь с нами</a></li>
+          <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<a class="forkit" data-text="Отправить Запрос" data-text-detached="Тянуть вниз >"></a>
+<style type="text/css">#nav{margin-right:100px}</style>
+
+<div class="container service-block">
+	<div class="row" align="center">
+		<div class="col-md-4">
+		  <div class="col-md-4 col-sm-4">
+		  	<a href="latest work.html" class="glyphicon glyphicon-globe icons"></a>
+		  </div>
+		  <div class="col-md-8 col-sm-8">
+		  	<h3>WEB РАЗРАБОТКА</h3>
+			<p>Создание сайтов, порталов <br>и интернет магазинов</p>
+		  </div>
+		</div>
+		<div class="col-md-4">
+		  <div class="col-md-4 col-sm-4">
+		  	<a href="latest work.html" class="fa fa-android icons"></a>
+		  </div>
+		  <div class="col-md-8 col-sm-8">	
+			<h3>МОБИЛЬНАЯ РАЗРАБОТКА</h3>
+			<p>Создание приложения <br>на Android и iOS</p>
+		  </div>
+		</div>
+		<div class="col-md-4">
+		  <div class="col-md-4 col-sm-4">
+		  	<a href="latest work.html" class="fa fa-desktop icons"></a>
+		  </div>
+		  <div class="col-md-8 col-sm-8">
+			<h3>РАЗРАБОТКА НА DESKTOP</h3>
+			<p>Создание приложения <br>на всех платформах Windows</p>
+		  </div>
+		</div>
+	</div>
+	<div class="row" align="center">
+		<div class="col-md-4">
+		  <div class="col-md-4 col-sm-4">
+		  	<a href="latest work.html" class="fa fa-rocket icons"></a>
+		  </div>
+		  <div class="col-md-8 col-sm-8">
+			<h3>SEO & SMM</h3>
+			<p>Продвижение мобильных приложений и вебсайтов Подготовка статей</p>
+		  </div>
+		</div>
+		<div class="col-md-4">
+		  <div class="col-md-4 col-sm-4">
+		  	<a href="latest work.html" class="fa fa-leaf icons"></a>
+		  </div>
+		  <div class="col-md-8 col-sm-8">
+			<h3>ДИЗАЙН</h3>
+			<p>Разработка дизайна вебсайтов, порталов, приложений, фирменный стиль компании</p>
+		  </div>
+		</div>
+		<div class="col-md-4">
+		  <div class="col-md-4 col-sm-4">
+		  	<a href="latest work.html" class="fa fa-compress icons"></a>
+		  </div>
+		  <div class="col-md-8 col-sm-8">
+			<h3>ПРОЧЕЕ</h3>
+			<p>Поддержка стартапов <br>Организация тренингов и семинаров</p>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<!-- request form -->
+<div id="request_form">
+            <div class="close-button"><span class="fa" style="font-family: 'fontawesome'!important;">&#xf057;</span></div>
+            <div style="margin-top: 60px;">
+                <div class="title">Расскажите нам о<span> Своем</span> Проекте</div>
+                <div lang="en-US" dir="ltr">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div id="contact-form" style="position: relative;">
+                        <center><form method="POST" name="myForm">
+                          <div class="row" style="padding-bottom: 65px;">
+                            <div class="col-md-6 col-sm-6 column" style="margin-right: 0!important;">
+                              <input id="full_name" maxlength="40" name="full_name" size="20" type="text" placeholder="Ваше имя" class="form-control" required />
+                              <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Адрес электронной почты" class="form-control" required />
+                              <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Номер телефона" class="form-control" required />
+                              <input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Название компании" class="form-control" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 column">
+                              <textarea id="description" name="description" cols="30" rows="6" placeholder="Краткое описание проекта" class="form-control" required/ ></textarea>
+                              <input id="budget" name="budget" type="text" size="30" placeholder="Бюджет проекта" class="form-control" required />
+                            </div>
+                          </div>
+                          <div class="row" style="margin-left: 0!important; margin-right: 0!important;">
+                          <select class="selectpicker form-control" multiple data-max-options="8" style="color: #f1c40f; font-weight: bold;">
+                              <option selected disabled hidden style="color: #f1c40f;font-weight: bold;">Мне нужна помощь:</option>
+                              <option value="1">Редизайн моего сайта</option>
+                              <option value="2">Новый веб-сайт</option>
+                              <option value="3">Электронная торговля</option>
+                              <option value="4">Мобильное приложение</option>
+                              <option value="5">Брендинг</option>
+                              <option value="6">Маркетинг</option>
+                              <option value="7">Поддержка</option>
+                              <option value="8">Другие</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                            <center><button id="contactSubmit" type="submit" name="submit">Отправить</button></center>
+                            </div>
+                            <div style="text-align: center; color: #f1c40f;" class="form-error"></div>
+                          </form>
+                        </center>
+                      </div>
+                    </div>                
+                </div>
+            </div>
+        </div> 
+
+
+<!-- 
+<div id="particles-js"></div>
+<script src="data/js/particles.js"></script> -->
+
+<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+
+<!-- preloader script-->
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){	el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if(el.style.opacity <=0.05){clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){
+	setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<script type='text/javascript' src='data/js/forkit.min.js'></script> 
+<script type="text/javascript">
+	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+	particlesJS.load('particles-js', 'assets/particles.json', function() {
+  	console.log('callback - particles.js config loaded');
+});
+</script>
+
+</body>
+</html>
